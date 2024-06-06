@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:24 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 16:42:00 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/06 16:57:38 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,22 @@ Fixed::~Fixed()
 	
 }
 
-void Fixed::setRawBits(int const raw)
+Fidex::Fixed( const Fixed& copy)
+{
+	
+}
+		
+Fixed::Fixed& operator=(const Fixed& copy)
+{
+	
+}	
+
+void Fixed::setRawBits( int const raw )
 {
 	
 }
 
-int Fixed::getRawBits(void) const
+int Fixed::getRawBits( void ) const
 {
 	return this->_fixed;
 }
