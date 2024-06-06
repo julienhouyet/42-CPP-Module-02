@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 16:56:15 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/06 17:27:28 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ class Fixed
 		int getRawBits( void ) const;
 		
 	private:
-		int _fixed;
-		static const int _fractionalBits = 8;
+		int _raw;
+		static const int _bits = 8;
 };
