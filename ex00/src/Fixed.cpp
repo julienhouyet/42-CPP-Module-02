@@ -6,25 +6,25 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:24 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 17:28:13 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 15:26:27 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 #include <iostream>
 
-Fixed::Fixed() : _raw(0)
+Fixed::Fixed() : _raw( 0 )
 {
 	std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed( const Fixed& copy)
+Fixed::Fixed( const Fixed& copy )
 {
 	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
 }
 		
-Fixed& Fixed::operator=(const Fixed& copy)
+Fixed& Fixed::operator=( const Fixed& copy )
 {
 	std::cout << "Copy assignment operator called" << std::endl;
     if (this != &copy) {

@@ -6,11 +6,13 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/07 07:53:07 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 15:27:23 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+#ifndef __FIXED_H__
+#define __FIXED_H__
 #include <iostream>
 #include <cmath>
 
@@ -37,3 +39,5 @@ class Fixed
 		int _raw;
 		static const int _bits = 8;
 };
+
+#endif
