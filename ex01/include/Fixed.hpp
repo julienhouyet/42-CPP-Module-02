@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/07 07:38:53 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:53:07 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ class Fixed
 
 		float toFloat( void ) const;
 		int toInt( void ) const;
+
+		friend std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
 		
 	private:
 		int _raw;
