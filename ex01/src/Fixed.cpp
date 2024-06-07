@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:24 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 17:28:13 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:38:41 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,19 @@ Fixed::Fixed() : _raw(0)
 	std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed( const Fixed& copy)
+Fixed::Fixed(const int number)
+{
+	std::cout << "Int constructor called" << std::endl;
+	this->_raw = number << _bits;
+}
+
+Fixed::Fixed(const float number)
+{
+	std::cout << "Float constructor called" << std::endl;
+	this->_raw = roundf(number * (1 << _bits));
+}
+
+Fixed::Fixed(const Fixed& copy)
 {
 	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;

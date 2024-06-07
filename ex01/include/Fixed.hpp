@@ -6,23 +6,30 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 17:27:28 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 07:38:53 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+#include <iostream>
+#include <cmath>
 
 class Fixed
 {
 	public:
 		Fixed();
-		Fixed( const Fixed& copy);
-		Fixed& operator=(const Fixed& copy);
+		Fixed( const int number );
+		Fixed( const float number );
+		Fixed( const Fixed& copy );
+		Fixed& operator=( const Fixed& copy );
 		~Fixed();
 		
 		void setRawBits( int const raw );
 
 		int getRawBits( void ) const;
+
+		float toFloat( void ) const;
+		int toInt( void ) const;
 		
 	private:
 		int _raw;
