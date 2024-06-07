@@ -6,7 +6,7 @@
 /*   By: jhouyet <jhouyet@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 15:58:18 by jhouyet           #+#    #+#             */
-/*   Updated: 2024/06/06 17:27:28 by jhouyet          ###   ########.fr       */
+/*   Updated: 2024/06/07 06:02:42 by jhouyet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ class Fixed
 {
 	public:
 		Fixed();
-		Fixed( const Fixed& copy);
+		Fixed( const Fixed&);
 		Fixed& operator=(const Fixed& copy);
 		~Fixed();
 		
